@@ -11,6 +11,8 @@
 
 2) Data Augmentation
 
+spo데이터는 376개, spo가 아닌 데이터는 4624개로 data imbalance현상이 일어나 augmentation을 진행.
+down sampling 수행 (spo가 아닌 데이터를 spo데이터의 개수로 맞추는 방법)
 
 # modeling
 1) RNN
@@ -23,3 +25,7 @@
 # Hyper parameter tuning
 
 # conclusion
+
+BERT)
+MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O -> 98%
+MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O
