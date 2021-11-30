@@ -62,3 +62,7 @@ BERT)
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling X -> 0.92 => 성능은 높으나 data imbalance
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling O -> 0.75
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling O, add_crawlling -> 0.77
+- MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(rd), downsampling O, add_crawlling ->
+- MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(ri), downsampling O, add_crawlling ->
+- MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(rs), downsampling O, add_crawlling ->
+- MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(sr), downsampling O, add_crawlling ->
