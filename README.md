@@ -2,14 +2,14 @@
 
 # Data collection
 1) 기존 데이터<br>
-기존 nsmc 네이버 리뷰 데이터 중 5000개 추출.
+- 기존 nsmc 네이버 리뷰 데이터 중 5000개 추출.
 
 2) 추가 데이터 수집<br>
-최신 리뷰 데이터 및 추가 데이터 수집을 위해 리뷰 크롤링
+- 최신 리뷰 데이터 및 추가 데이터 수집을 위해 리뷰 크롤링
 
 # Data preprocessing
 1) labeling
-스포 -> 1, 스포x -> 0으로 labeling 직접 수행(2명)
+- 스포 -> 1, 스포x -> 0으로 labeling 직접 수행(2명)
 
 스포 기준<br>
 A. 결말 및 숨은 의도 해석<br>
@@ -21,7 +21,7 @@ E. 특정 장면에 대한 표현 및 해석<br>
 해당 기준에 하나라도 적용 시 스포로 판단
 
 2) Data Augmentation
-spo데이터는 376개, spo가 아닌 데이터는 4624개로 data imbalance현상이 일어나 augmentation을 진행.
+- 스포 데이터는 376개, spo가 아닌 데이터는 4624개로 data imbalance현상이 일어나 augmentation을 진행.
 
 
 
