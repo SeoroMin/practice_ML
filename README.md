@@ -58,7 +58,7 @@ E. 특정 장면에 대한 표현 및 해석<br>
 # conclusion
 
 BERT)
-- MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(5개) downsampling X -> 0.98
+- MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(5개) downsampling X -> 0.89
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling X -> 0.92 => 성능은 높으나 data imbalance
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling O -> 0.75
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling O, add_crawlling -> 0.77
