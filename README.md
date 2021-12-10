@@ -69,3 +69,4 @@ BERT)
 
 KoBERT)
 - epoch20, augmentation X, downsampling O, add_crawlling -> 0.81 (0.83 -> epoch7, epoch8부터 과적합되어 오히려 성능이 떨어짐)
+- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation X, downsampling O, add_crawlling, add data(label) -> 0.82 (0.87 -> epoch3, epoch8부터 과적합되어 오히려 성능이 떨어짐)
