@@ -66,3 +66,6 @@ BERT)
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(ri), downsampling O, add_crawlling -> 0.99
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(rs), downsampling O, add_crawlling -> 0.96
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(sr), downsampling O, add_crawlling -> 0.42
+
+KoBERT)
+- epoch20, augmentation X, downsampling O, add_crawlling -> 0.81 (0.83 -> epoch7, epoch8부터 과적합되어 오히려 성능이 떨어짐)
