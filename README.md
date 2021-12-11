@@ -69,12 +69,9 @@ BERT)
 
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation X, downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(All), downsampling O, add_crawlling, add data(label) -> 0.79 (0.80 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
-
-
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(rd), downsampling O, add_crawlling, add data(label) -> 0.81 (0.81 -> epoch7, epoch8부터 과적합되어 오히려 성능이 떨어짐)
-
-여기부터 다시 실험
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(ri), downsampling O, add_crawlling, add data(label) -> 0.83
+여기부터 다시 실험
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(rs), downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(sr), downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
 
