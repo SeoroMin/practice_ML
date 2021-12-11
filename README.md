@@ -68,16 +68,22 @@ BERT)
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(sr), downsampling O, add_crawlling -> 0.42
 
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation X, downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
+- MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(All), downsampling O, add_crawlling, add data(label) -> 0.79 (0.80 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
+
+
+- MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(rd), downsampling O, add_crawlling, add data(label) -> 0.81 (0.81 -> epoch7, epoch8부터 과적합되어 오히려 성능이 떨어짐)
 
 여기부터 다시 실험
-- MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(All), downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
-- MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(rd), downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(ri), downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(rs), downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
 - MAX_len=256, Batch_size=16, epochs=10, lr=2e-5, augmentation O(sr), downsampling O, add_crawlling, add data(label) -> 0.83 (0.87 -> epoch5, epoch6부터 과적합되어 오히려 성능이 떨어짐)
 
 KoBERT)
 - epoch20, augmentation X, downsampling O, add_crawlling -> 0.81 (0.83 -> epoch7, epoch8부터 과적합되어 오히려 성능이 떨어짐)
-- 
-- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation X, downsampling O, add_crawlling, add data(label) -> 0.82 (0.87 -> epoch3, epoch8부터 과적합되어 오히려 성능이 떨어짐)
 
+- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation X, downsampling O, add_crawlling, add data(label) -> 0.82 (0.87 -> epoch3, epoch8부터 과적합되어 오히려 성능이 떨어짐)
+- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(All), downsampling O, add_crawlling, add data(label) -> 0.85 (0.86 -> epoch7, epoch8부터 과적합되어 오히려 성능이 떨어짐)
+- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(rd), downsampling O, add_crawlling, add data(label) -> 0.86 (0.86 -> epoch2, epoch3부터 과적합되어 오히려 성능이 떨어짐) (나중에 다시)
+- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(ri), downsampling O, add_crawlling, add data(label) -> 0.85 (0.85 -> epoch2, epoch8부터 과적합되어 오히려 성능이 떨어짐)
+- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(rs), downsampling O, add_crawlling, add data(label) -> 0.86 (0.87 -> epoch2, epoch3부터 과적합되어 오히려 성능이 떨어짐)
+- MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(sr), downsampling O, add_crawlling, add data(label) -> 0.82 (0.84 -> epoch2, epoch3부터 과적합되어 오히려 성능이 떨어짐)
