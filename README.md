@@ -43,7 +43,7 @@ E. 특정 장면에 대한 표현 및 해석<br>
 | Name                            | batch/lr/input/hidden | train acc/test acc |
 |---------------------------------|-----------------------|--------------------|
 | data_spo_aug_X_train_1210.csv   | 32/0.003/64/128       | 73.69/65.3         |
-| data_spo_aug_all_train_1210.csv | 64/0.001/64/64        | 91.86/72.87        |
+| **data_spo_aug_all_train_1210.csv** | 64/0.001/64/64        | 91.86/72.87        |
 | data_spo_aug_rd_train_1210.csv  | 64/0.005/64/64        | 84.82/69.39        |
 | data_spo_aug_ri_train_1210.csv  | 64/0.005/64/64        | 87.82/70.30        |
 | data_spo_aug_rs_train_1210.csv  | 64/0.005/32/64        | 83.89/69.09        |
@@ -62,7 +62,7 @@ E. 특정 장면에 대한 표현 및 해석<br>
 | Name                            | batch/lr/input/hidden | train acc/test acc |
 |---------------------------------|-----------------------|--------------------|
 | data_spo_aug_X_train_1210.csv   | 64/0.003/32/64        | 74.01/67.42        |
-| data_spo_aug_all_train_1210.csv | 64/0.003/64/64        | 97.1/75.3          |
+| **data_spo_aug_all_train_1210.csv** | 64/0.003/64/64        | 97.1/75.3          |
 | data_spo_aug_rd_train_1210.csv  | 64/0.001/64/128       | 83.95/73.18        |
 | data_spo_aug_ri_train_1210.csv  | 64/0.005/64/64        | 87.41/75.0         |
 | data_spo_aug_rs_train_1210.csv  | 64/0.003/64/64        | 85.31/73.18        |
