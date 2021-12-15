@@ -40,9 +40,15 @@ E. 특정 장면에 대한 표현 및 해석<br>
 
 - **output**은 현 상태의 **hidden state**와 **w_y**를 곱한 결과입니다.
 
+- **RNN**의 실험 결과는 BATCH_SIZES를 고정 후, 다음 조합에 대해, 3회 반복 시행하여 그 중 가장 좋은 결과를 낸 것을 작성 (64 BATCH_SIZE 통일)
+
+INPUT_SIZES = [32, 64]
+HIDDEN_SIZES = [64, 128]
+LEARNING_RATES = [1e-3, 3e-3, 5e-3]
+
 | Name                            | batch/lr/input/hidden | train acc/test acc |
 |---------------------------------|-----------------------|--------------------|
-| data_spo_aug_X_train_1210.csv   | 32/0.003/64/128       | 73.69/65.3         |
+| data_spo_aug_X_train_1210.csv   | 64/0.003/64/128       | 73.69/65.3         |
 | **data_spo_aug_all_train_1210.csv** | **64/0.001/64/64**        | **91.86/72.87**        |
 | data_spo_aug_rd_train_1210.csv  | 64/0.005/64/64        | 84.82/69.39        |
 | data_spo_aug_ri_train_1210.csv  | 64/0.005/64/64        | 87.82/70.30        |
@@ -58,6 +64,12 @@ E. 특정 장면에 대한 표현 및 해석<br>
 </p>
 
 - 첫 번째 사진은 LSTM의 구조, 두 번째 사진은 계산 식입니다.
+
+- **LSTM**의 실험 결과는 BATCH_SIZES를 고정 후, 다음 조합에 대해, 3회 반복 시행하여 그 중 가장 좋은 결과를 낸 것을 작성 (64 BATCH_SIZE 통일)
+
+INPUT_SIZES = [32, 64]
+HIDDEN_SIZES = [64, 128]
+LEARNING_RATES = [1e-3, 3e-3, 5e-3]
 
 | Name                            | batch/lr/input/hidden | train acc/test acc |
 |---------------------------------|-----------------------|--------------------|
