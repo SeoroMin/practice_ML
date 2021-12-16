@@ -82,6 +82,26 @@ LEARNING_RATES = [1e-3, 3e-3, 5e-3]
 
 3) Bert
 
+| Name                            | batch/lr/max_len | test acc |
+|---------------------------------|-----------------------|--------------------|
+| data_spo_aug_X_train_1210.csv   | 16/2E-05/256        |   81.2      |
+| data_spo_aug_all_train_1210.csv | 16/2E-05/256        |  79.2          |
+| data_spo_aug_rd_train_1210.csv  | 16/2E-05/256       | 83.2        |
+| **data_spo_aug_ri_train_1210.csv**  | **16/2E-05/256**        | **84.3**         |
+| data_spo_aug_rs_train_1210.csv  | 16/2E-05/256        | 82.2        |
+| data_spo_aug_sr_train_1210.csv  | 16/2E-05/256        | 78.1        |
+
+4) KoBERT
+
+| Name                            | batch/lr/max_len/warmup_ratio/max_grad_norm | test acc |
+|---------------------------------|-----------------------|--------------------|
+| data_spo_aug_X_train_1210.csv   | 16/5E-05/256/0.1/1        | 83.1        |
+| *ata_spo_aug_all_train_1210.csv | 16/5E-05/256/0.1/1        | 82.3          |
+| data_spo_aug_rd_train_1210.csv  | 16/5E-05/256/0.1/1       | 85.7        |
+| **data_spo_aug_ri_train_1210.csv**  | **16/5E-05/256/0.1/1**        | **86.2**         |
+| data_spo_aug_rs_train_1210.csv  | 16/5E-05/256/0.1/1        | 84.9        |
+| data_spo_aug_sr_train_1210.csv  | 16/5E-05/256/0.1/1        | 81.2        |
+
 
 # Hyper parameter tuning
 
