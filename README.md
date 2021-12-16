@@ -117,6 +117,7 @@ LEARNING_RATES = [1e-3, 3e-3, 5e-3]
 # conclusion
 
 BERT)
+데이터 추가 전(test가 현저히 적음)
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation O(5개) downsampling X -> 0.89
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling X -> 0.92 => 성능은 높으나 data imbalance
 - MAX_len=64, Batch_size=32, lr=2e-5, epoch=20, augmentation X, downsampling O -> 0.75
@@ -145,3 +146,5 @@ KoBERT)
 - MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(ri), downsampling O, add_crawlling, add data(label) -> 0.85 (0.85 -> epoch2, epoch8부터 과적합되어 오히려 성능이 떨어짐)
 - MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(rs), downsampling O, add_crawlling, add data(label) -> 0.86 (0.87 -> epoch2, epoch3부터 과적합되어 오히려 성능이 떨어짐)
 - MAX_len=256, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation O(sr), downsampling O, add_crawlling, add data(label) -> 0.82 (0.84 -> epoch2, epoch3부터 과적합되어 오히려 성능이 떨어짐)
+
+- MAX_len=32, Batch_size=16, warmup_ratio=0.1, epochs=10, max_grad_norm=1, log_interval=200, lr=5e-5, augmentation X, downsampling O, add_crawlling, add data(label) -> 0.87
