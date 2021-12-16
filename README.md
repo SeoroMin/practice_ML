@@ -22,7 +22,7 @@ E. 특정 장면에 대한 표현 및 해석<br>
 
 2) Data Augmentation
 - 스포 데이터는 376개, spo가 아닌 데이터는 4624개로 data imbalance현상이 일어나 augmentation을 진행.
-
+- augmentation X, augmentation all(전부), rd, rs, sr, ri 각각 기법을 적용한 데이터를 생성해 실험 진행
 
 
 3) down sampling 수행 (spo가 아닌 데이터를 spo데이터의 개수로 맞추는 방법)
